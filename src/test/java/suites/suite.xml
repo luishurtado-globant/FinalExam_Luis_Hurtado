@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login Suite">
+    <parameter name="url" value="https://www.espnqa.com/?src=com&amp;_adblock=true&amp;espn=cloud"></parameter>
+    <test name="Log in">
+        <classes>
+            <class name="com.globant.AppTest">
+                <methods>
+                    <exclude name="deleteAccount"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="delete">
+        <classes>
+            <class name="com.globant.AppTest">
+                <methods>
+                    <exclude name="logoutAccount"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
